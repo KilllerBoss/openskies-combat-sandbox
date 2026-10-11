@@ -1,0 +1,104 @@
+{
+  "vehicles": [
+    {
+      "id": "falcon",
+      "name": "Falcon",
+      "vehicleClass": "jet",
+      "role": "Multirollen-Jäger (F-16-artig, wendig)",
+      "hp": 100,
+      "jetPhysics": {
+        "mass": 9500, "maxThrust": 130000, "wingArea": 32,
+        "maxSpeed": 340, "stallSpeed": 62,
+        "cd0": 0.021, "inducedK": 0.055, "clSlope": 4.8,
+        "stallAngleDeg": 16, "maxPitchRate": 1.9, "maxRollRate": 4.2,
+        "maxYawRate": 0.55, "armor": 0.05
+      },
+      "cannon": { "rate": 12, "damage": 8, "muzzleVelocity": 900, "spreadDeg": 0.8, "ammo": 300, "regenPerSec": 4, "range": 1200 },
+      "missiles": { "count": 6, "damage": 60, "lockTime": 2.5, "lockConeDeg": 25, "lockRange": 3000, "cooldown": 1.2, "speed": 450, "accel": 300, "turnRate": 2.4, "burnTime": 3.5, "navConstant": 4 }
+    },
+    {
+      "id": "tomcat",
+      "name": "Tomcat",
+      "vehicleClass": "jet",
+      "role": "Langstrecken-Abfangjäger (F-14-artig, schwer & schnell)",
+      "hp": 120,
+      "jetPhysics": {
+        "mass": 15800, "maxThrust": 200000, "wingArea": 56,
+        "maxSpeed": 380, "stallSpeed": 74,
+        "cd0": 0.026, "inducedK": 0.05, "clSlope": 4.4,
+        "stallAngleDeg": 15, "maxPitchRate": 1.35, "maxRollRate": 2.6,
+        "maxYawRate": 0.42, "armor": 0.15
+      },
+      "cannon": { "rate": 12, "damage": 8, "muzzleVelocity": 900, "spreadDeg": 0.8, "ammo": 300, "regenPerSec": 4, "range": 1200 },
+      "missiles": { "count": 6, "damage": 60, "lockTime": 2.5, "lockConeDeg": 25, "lockRange": 3000, "cooldown": 1.2, "speed": 450, "accel": 300, "turnRate": 2.4, "burnTime": 3.5, "navConstant": 4 }
+    },
+    {
+      "id": "falke",
+      "name": "Falke",
+      "vehicleClass": "jet",
+      "role": "Luftüberlegenheitsjäger (MiG-29-artig, agil)",
+      "hp": 105,
+      "jetPhysics": {
+        "mass": 11000, "maxThrust": 160000, "wingArea": 38,
+        "maxSpeed": 350, "stallSpeed": 66,
+        "cd0": 0.023, "inducedK": 0.052, "clSlope": 4.7,
+        "stallAngleDeg": 16, "maxPitchRate": 2.1, "maxRollRate": 4.6,
+        "maxYawRate": 0.6, "armor": 0.08
+      },
+      "cannon": { "rate": 12, "damage": 8, "muzzleVelocity": 900, "spreadDeg": 0.8, "ammo": 300, "regenPerSec": 4, "range": 1200 },
+      "missiles": { "count": 6, "damage": 60, "lockTime": 2.5, "lockConeDeg": 25, "lockRange": 3000, "cooldown": 1.2, "speed": 450, "accel": 300, "turnRate": 2.4, "burnTime": 3.5, "navConstant": 4 }
+    },
+    {
+      "id": "raptor",
+      "name": "Raptor",
+      "vehicleClass": "jet",
+      "role": "Stealth-Kampfjet (F-22-artig, trefferresistent)",
+      "hp": 135,
+      "jetPhysics": {
+        "mass": 14500, "maxThrust": 190000, "wingArea": 46,
+        "maxSpeed": 395, "stallSpeed": 68,
+        "cd0": 0.02, "inducedK": 0.048, "clSlope": 4.5,
+        "stallAngleDeg": 17, "maxPitchRate": 2.0, "maxRollRate": 4.4,
+        "maxYawRate": 0.58, "armor": 0.25
+      },
+      "cannon": { "rate": 12, "damage": 8, "muzzleVelocity": 900, "spreadDeg": 0.8, "ammo": 300, "regenPerSec": 4, "range": 1200 },
+      "missiles": { "count": 6, "damage": 60, "lockTime": 2.5, "lockConeDeg": 25, "lockRange": 3000, "cooldown": 1.2, "speed": 450, "accel": 300, "turnRate": 2.4, "burnTime": 3.5, "navConstant": 4 }
+    },
+    {
+      "id": "guardian",
+      "name": "Guardian",
+      "vehicleClass": "ship",
+      "role": "Zerstörer (Flugabwehr)",
+      "hp": 300,
+      "shipPhysics": { "maxSpeed": 15, "accelTime": 5, "turnRate": 0.25, "armor": 0.3 },
+      "cannon": { "rate": 6, "damage": 10, "muzzleVelocity": 700, "spreadDeg": 2.5, "ammo": 999, "regenPerSec": 10, "range": 2600 }
+    },
+    {
+      "id": "wolf",
+      "name": "Wolf",
+      "vehicleClass": "ship",
+      "role": "Schnellboot (MG-Flak)",
+      "hp": 90,
+      "shipPhysics": { "maxSpeed": 28, "accelTime": 3, "turnRate": 0.5, "armor": 0.1 },
+      "cannon": { "rate": 10, "damage": 6, "muzzleVelocity": 800, "spreadDeg": 3, "ammo": 999, "regenPerSec": 10, "range": 1600 }
+    },
+    {
+      "id": "panther",
+      "name": "Panther",
+      "vehicleClass": "tank",
+      "role": "Kampfpanzer",
+      "hp": 180,
+      "tankPhysics": { "maxSpeed": 12, "reverseSpeed": 5, "turnRate": 0.8, "turretRate": 1.5, "armor": 0.35 },
+      "cannon": { "rate": 0.4, "damage": 70, "muzzleVelocity": 170, "spreadDeg": 0.5, "ammo": 40, "regenPerSec": 0.5, "range": 3000 }
+    },
+    {
+      "id": "scout",
+      "name": "Scout",
+      "vehicleClass": "tank",
+      "role": "leichter Spähpanzer",
+      "hp": 80,
+      "tankPhysics": { "maxSpeed": 22, "reverseSpeed": 8, "turnRate": 1.3, "turretRate": 2.2, "armor": 0.1 },
+      "cannon": { "rate": 1.5, "damage": 25, "muzzleVelocity": 200, "spreadDeg": 1.2, "ammo": 60, "regenPerSec": 1, "range": 2200 }
+    }
+  ]
+}
